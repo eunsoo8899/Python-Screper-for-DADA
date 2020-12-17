@@ -140,6 +140,7 @@ while pageNum < 6:
     pageNum += 1
 
 # 각 페이지 묶음에서  쌓은[powerbanklist]에 들어있는 [arrays] 를 csv형식으로 저장
+# open('저장할 파일 이름.csv', 한글 인식 할 수 있게,)
 with open('dada.csv', "w", encoding='utf-8-sig', newline="") as f:
     writer = csv.writer(f)
     writer.writerow(['품번', '품명', '가격'])
